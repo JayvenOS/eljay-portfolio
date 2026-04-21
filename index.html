@@ -3,113 +3,404 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eljay Adero </title>
+  <meta name="description" content="Eljay Adero — South African Music Producer, Songwriter & Audio Engineer. Mixing, mastering, and original production for artists ready to sound world-class.">
+  <meta name="keywords" content="Eljay Adero, South African producer, music producer Cape Town, songwriter, audio engineer, mixing engineer, mastering">
+  <meta property="og:title" content="Eljay Adero | Producer · Songwriter · Engineer">
+  <meta property="og:description" content="South African music producer, songwriter, and engineer. Atmospheric production meets honest storytelling.">
+  <meta property="og:image" content="eljay-images/eljaycover.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="eljay-images/orangeeljay.jpg">
+<link rel="apple-touch-icon" href="eljay-images/orangeeljay.jpg">
+  <title>Eljay Adero | Producer · Songwriter · Engineer</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MusicGroup",
+        "name": "Eljay Adero",
+        "url": "https://eljayadero.com",
+        "image": "E:\\Freelancing\\builds\\eljay\\eljay-images/eljaycover.jpg",
+        "description": "South African music producer, songwriter, and audio engineer whose sound blends atmospheric production with honest storytelling.",
+        "genre": ["R&B", "Afro Soul", "Alternative"],
+        "sameAs": [
+          "https://open.spotify.com/artist/6cg5FAGiiBffmzj2Pf7WTi",
+          "https://instagram.com/eljayadero",
+          "https://www.youtube.com/@Aderoeljay",
+          "https://www.tiktok.com/@eljayadero"
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Eljay Adero — Music Production & Engineering",
+        "description": "Professional music production, mixing, mastering, and songwriting services.",
+        "areaServed": ["South Africa", "Cape Town", "Johannesburg", "Africa"],
+        "priceRange": "R100–R350",
+        "email": "Eljayadero@gmail.com",
+        "serviceType": ["Music Production", "Audio Mixing", "Mastering", "Songwriting"]
+      },
+      {
+        "@type": "Service",
+        "name": "Professional Audio Mixing",
+        "provider": {"@type": "Person", "name": "Eljay Adero"},
+        "description": "Professional mixing services: 10 tracks or below R100, 20–40 tracks R200, 45+ tracks R350.",
+        "areaServed": "South Africa"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#music">Music</a>
-    <a href="#releases">Releases</a>
-    <a href="#contact">Contact</a>
-    <a href="#pricing">Pricing</a>
-  </nav>
+  <!-- FLOATING ACTION BUTTONS -->
+  <div class="fab-cluster" aria-label="Quick contact options">
+  <a class="fab fab-email" 
+     href="mailto:Eljayadero@gmail.com?subject=Project%20Inquiry%3A%20Production%20%26%20Engineering%20Services&body=Dear%20Eljay%20Adero%2C%0A%0AI%20am%20reaching%20out%20after%20reviewing%20your%20work.%20I%20am%20interested%20in%20discussing%20a%20potential%20collaboration%20involving%20your%20specialized%20production%20and%20engineering%20expertise.%0A%0APlease%20find%20the%20preliminary%20project%20details%20below%3A%0A%0A-%20Client%2FOrganization%3A%20%0A-%20Project%20Scope%20(e.g.%20Production%2C%20Mixing%2C%20Mastering)%3A%20%0A-%20Creative%20Vision%3A%20%0A-%20Desired%20Timeline%3A%20%0A-%20Estimated%20Budget%3A%20%0A%0AI%20would%20appreciate%20it%20if%20you%20could%20let%20me%20know%20your%20current%20availability%20for%20a%20brief%20introductory%20discussion%20to%20explore%20these%20details%20further.%0A%0ABest%20regards%2C" 
+     aria-label="Send email inquiry">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+      <polyline points="22,6 12,13 2,6"/>
+    </svg>
+  </a>
+</div>
 
-  <!-- HERO -->
-  <section class="section hero" id="home">
-    <img class="bg" src="eljaypictures/orangeeljay.jpg" alt="Eljay Adero">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>Eljay Adero</h1>
-      <p>Producer • Songwriter • Engineer</p>
-    </div>
-  </section>
+  <!-- HEADER -->
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-logo">EA</div>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#releases">Releases</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="inner">
-      <h2>About Me</h2>
-          <p>Eljay Adero is a South African artist, producer, and engineer whose sound lives between emotion and precision.  
-    His music blends smooth, atmospheric production with honest storytelling — creating an experience that feels both intimate and timeless.  
-    Every track reflects his evolution, driven by creativity, self-expression, and the pursuit of something real.  
-    <br><br>
-    Eljay doesn’t just make songs — he builds moments you can feel.</p>
-    </div>
-  </section>
+  <main>
 
-  <!-- MUSIC EMBEDS -->
-  <section class="section" id="music">
-    <div class="embed-card">
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/6cg5FAGiiBffmzj2Pf7WTi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-    <div class="embed-card">
-      <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/artist/eljay-adero/1721438385" loading ="lazy"></iframe>
-    </div>
-  </section>
-
-  <!-- LATEST RELEASES -->
-  <section class="section" id="releases">
-    <h2 class="section-title">Latest Releases</h2>
-    <div class="latest-releases">
-      <div class="release-card">
-        <a href="https://open.spotify.com/album/56xXJoyVnJmFlmIXDfEnIf?si=nUwjnIm1T9mT4zePeEtqfQ" target="_blank">
-        <img src="eljaypictures/useYou.jpg" alt="Use You" >
-        </a>
-        <div class="overlay-info">
-          <p class="artist">Eljay Adero & AMIIRII</p>
-          <p class="song">Use You</p>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Hero — Eljay Adero">
+      <div class="hero-media">
+        <picture>
+          <img src="eljay-images/eljaycover.jpg" alt="Eljay Adero profile — atmospheric blue lighting" loading="eager" fetchpriority="high">
+        </picture>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">South African Artist</p>
+        <h1>Eljay<br><em>Adero</em></h1>
+        <p class="hero-tagline">Producer · Songwriter · Engineer</p>
+        <p class="hero-value">Turning raw emotion into records that feel timeless.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Work With Me</a>
+          <a href="#releases" class="btn btn-ghost">Hear the Work</a>
         </div>
       </div>
-      <div class="release-card">
-        <a href="https://open.spotify.com/album/1OsJFSE8wd2DuCwo7Qzku8?si=iDhfQHLoS8uZKTCpGctkiQ" target="_blank">
-        <img src="eljaypictures/say my name.jpg" alt="Say My Name">
-        </a>
-      </a>
-        <div class="overlay-info">
-          <p class="artist">Eljay Adero </p>
-          <p class="song">Say My Name</p>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <picture>
+            <img src="eljay-images/orangeeljay.jpg" alt="Eljay Adero under warm orange lighting" loading="lazy">
+          </picture>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-text">
+          <p class="label">Who Is Eljay Adero?</p>
+          <h2 id="about-heading">How Eljay Adero Turns Emotion<br>Into Timeless Records</h2>
+          <p>Eljay Adero is a South African artist, producer, and engineer whose sound lives between emotion and precision. His music blends smooth, atmospheric production with honest storytelling — creating an experience that feels both intimate and timeless.</p>
+          <p>Every track reflects his evolution, driven by creativity, self-expression, and the pursuit of something real. Eljay doesn't just make songs — <strong>he builds moments you can feel.</strong></p>
+          <div class="about-actions">
+            <a class="btn btn-primary" href="#contact">Book a Session</a>
+            <a class="btn btn-ghost" href="#" id="vcard-download">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Save Contact
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- PRICING -->
-  <section class="section" id ="pricing">
-    <h2 class="section-title">Pricing </h2>
-    <p>Mixing:</p>
-    <p>10 Tracks or below : R100</p>
-    <p>20-40 Tracks: R200</p>
-    <p>45(+-) : R350</p>
-    
-  <!-- CONTACT -->
-<section class="section" id="contact">
-  <h2 class="section-title">Contact / Booking</h2>
-  <p>For business inquiries, bookings, and collaborations:</p>
-  <p><a href="mailto:business@eljayadero.com">Eljayadero@gmail.com</a></p>
-  <br>
-  <p>For personal contact or general messages:</p>
-  <p><a href="mailto:personal@eljayadero.com">Adamsliam984@gmail.com</a></p>
-</section>
+    </section>
 
+    <!-- BENTO SKILLS GRID -->
+    <section class="section bento-section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <p class="label">What Eljay Adero Delivers</p>
+        <h2 id="skills-heading">The Craft Behind Every Record</h2>
+      </div>
+      <div class="bento-grid">
+        <article class="bento-card bento-large bento-production">
+          <div class="bento-inner">
+            <h4>Production That Moves People</h4>
+            <p>Atmospheric, layered beats built from scratch — designed to serve the emotion of the song. From soft R&amp;B to cinematic Afro Soul.</p>
+            <span class="bento-tag">Original Production</span>
+          </div>
+        </article>
+        <article class="bento-card bento-mixing">
+          <div class="bento-inner">
+            <h4>Professional Mixing</h4>
+            <p>Every element placed with intention. Vocals that sit, low end that hits, clarity that translates on any speaker.</p>
+            <span class="bento-tag">Mixing &amp; Balancing</span>
+          </div>
+        </article>
+        <article class="bento-card bento-songwriting">
+          <div class="bento-inner">
+            <h4>Songwriting That Sticks</h4>
+            <p>Hooks, melodies, and lyrics rooted in real feeling. Songs people replay because they <em>mean</em> something.</p>
+            <span class="bento-tag">Songwriting</span>
+          </div>
+        </article>
+        <article class="bento-card bento-engineering">
+          <div class="bento-inner">
+            <h4>Engineering &amp; Finishing</h4>
+            <p>Studio-quality sound that competes globally. Clean sessions ready for streaming and sync licensing.</p>
+            <span class="bento-tag">Audio Engineering</span>
+          </div>
+        </article>
+        <article class="bento-card bento-wide bento-collab">
+          <div class="bento-inner">
+            <h4>How Eljay Adero Helps Artists Sound World-Class</h4>
+            <p>Whether you're recording your first EP or refining a project for release, Eljay brings technical skill and creative instinct to make every session count. South African artists who work with Eljay consistently leave with records they're proud to put out.</p>
+            <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- MUSIC EMBEDS -->
+    <section class="section" id="music" aria-labelledby="music-heading">
+      <div class="section-header">
+        <p class="label">Stream Now</p>
+        <h2 id="music-heading">Eljay Adero on All Platforms</h2>
+      </div>
+      <div class="embeds-grid">
+        <div class="embed-card glass">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6cg5FAGiiBffmzj2Pf7WTi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Eljay Adero on Spotify"></iframe>
+        </div>
+        <div class="embed-card glass">
+          <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="352" style="width:100%;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/artist/eljay-adero/1721438385" loading="lazy" title="Eljay Adero on Apple Music"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST RELEASES -->
+    <section class="section" id="releases" aria-labelledby="releases-heading">
+      <div class="section-header">
+        <p class="label">Discography</p>
+        <h2 id="releases-heading">Latest Releases</h2>
+      </div>
+      <div class="releases-grid">
+        <article class="release-card">
+          <a href="https://open.spotify.com/album/56xXJoyVnJmFlmIXDfEnIf?si=nUwjnIm1T9mT4zePeEtqfQ" target="_blank" rel="noopener" aria-label="Listen to Use You on Spotify">
+            <picture>
+              <img src="eljay-images/useYou.jpg" alt="Use You — Eljay Adero & AMIIRII single cover" loading="lazy">
+            </picture>
+            <div class="release-overlay">
+              <div class="release-play">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="release-info">
+                <p class="release-artist">Eljay Adero &amp; AMIIRII</p>
+                <p class="release-title">Use You</p>
+                <span class="release-platform">Spotify</span>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="release-card">
+          <a href="https://open.spotify.com/album/1OsJFSE8wd2DuCwo7Qzku8?si=iDhfQHLoS8uZKTCpGctkiQ" target="_blank" rel="noopener" aria-label="Listen to Say My Name on Spotify">
+            <picture>
+              <img src="eljay-images/say my name.jpg" alt="Say My Name — Eljay Adero single cover" loading="lazy">
+            </picture>
+            <div class="release-overlay">
+              <div class="release-play">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><polygon points="5,3 19,12 5,21"/></svg>
+              </div>
+              <div class="release-info">
+                <p class="release-artist">Eljay Adero</p>
+                <p class="release-title">Say My Name</p>
+                <span class="release-platform">Spotify</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="section-header">
+        <p class="label">Transparent Rates</p>
+        <h2 id="pricing-heading">Mixing Pricing</h2>
+        <p class="section-subtext">Flat-rate mixing so you know exactly what you're investing. No surprises.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-amount">R100</div>
+          <div class="pricing-detail">Up to 10 tracks</div>
+          <p>Perfect for singles and short EPs. Clean mix, fast turnaround.</p>
+          <a href="#contact" class="btn btn-ghost btn-sm">Get Started</a>
+        </article>
+        <article class="pricing-card pricing-featured">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-tier">Standard</div>
+          <div class="pricing-amount">R200</div>
+          <div class="pricing-detail">20–40 tracks</div>
+          <p>Full album mixes with detailed attention to every element.</p>
+          <a href="#contact" class="btn btn-primary btn-sm">Book This</a>
+        </article>
+        <article class="pricing-card">
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-amount">R350</div>
+          <div class="pricing-detail">45+ tracks</div>
+          <p>Complex, high-track-count sessions handled with full precision.</p>
+          <a href="#contact" class="btn btn-ghost btn-sm">Enquire</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-wrap glass">
+        <div class="contact-text">
+          <p class="label">Let's Build Something</p>
+          <h2 id="contact-heading">Book a Session or<br>Start a Conversation</h2>
+          <p>Whether you need mixing, a full production, or a creative collaborator — reach out and let's talk about your project.</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <span class="contact-method-label">Business &amp; Bookings</span>
+              <div class="contact-method-row">
+                <a href="mailto:Eljayadero@gmail.com" class="contact-email-link">Eljayadero@gmail.com</a>
+                <button class="copy-btn" data-copy="Eljayadero@gmail.com" aria-label="Copy business email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span class="copy-label">Copy</span>
+                </button>
+              </div>
+            </div>
+            <div class="contact-method">
+              <span class="contact-method-label">Personal &amp; General</span>
+              <div class="contact-method-row">
+                <a href="mailto:Adamsliam984@gmail.com" class="contact-email-link">Adamsliam984@gmail.com</a>
+                <button class="copy-btn" data-copy="Adamsliam984@gmail.com" aria-label="Copy personal email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span class="copy-label">Copy</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
-    © <span id="year"></span> Eljay Adero — All Rights Reserved
-    <div class="social-links">
-      <a href="https://instagram.com/eljayadero" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/eljayadero" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com/@Aderoeljay" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.tiktok.com/@eljayadero" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Eljay Adero</span>
+        <p>Producer · Songwriter · Engineer</p>
+        <p class="footer-area">Based in South Africa · Available Worldwide<br>Specialising in R&amp;B, Afro Soul &amp; Alternative</p>
+      </div>
+      <nav class="footer-socials" aria-label="Social media links">
+        <a href="https://instagram.com/eljayadero" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://twitter.com/eljayadero" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@Aderoeljay" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@eljayadero" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+        </a>
+        <a href="https://open.spotify.com/artist/6cg5FAGiiBffmzj2Pf7WTi" target="_blank" rel="noopener" aria-label="Spotify">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+      </nav>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Eljay Adero — All Rights Reserved</p>
+        <p class="footer-credits">Producer · Songwriter · Audio Engineer · South Africa</p>
+      </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('header nav a');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navItems.forEach(a => a.classList.remove('active'));
+          const a = document.querySelector(`header nav a[href="#${e.target.id}"]`);
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(s => io.observe(s));
+
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+          const lbl = btn.querySelector('.copy-label');
+          lbl.textContent = 'Copied!';
+          btn.classList.add('copied');
+          setTimeout(() => { lbl.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+        });
+      });
+    });
+
+    document.getElementById('vcard-download').addEventListener('click', function(e) {
+      e.preventDefault();
+      const vcf = `BEGIN:VCARD\nVERSION:3.0\nFN:Eljay Adero\nTITLE:Producer, Songwriter & Engineer\nEMAIL;TYPE=work:Eljayadero@gmail.com\nEMAIL;TYPE=personal:Adamsliam984@gmail.com\nURL:https://eljayadero.com\nNOTE:South African music producer, songwriter, and audio engineer.\nEND:VCARD`;
+      const blob = new Blob([vcf], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'eljay-adero.vcf'; a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    const reveals = document.querySelectorAll('.bento-card, .release-card, .pricing-card, .embed-card, .about-grid, .contact-wrap');
+    const ro = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); ro.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+    reveals.forEach(el => ro.observe(el));
   </script>
 </body>
 </html>
-
-
